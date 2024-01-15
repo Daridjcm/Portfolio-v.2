@@ -12,7 +12,6 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@astrojs/tailwind": "^5.1.0",
-    "@iconify/json": "^2.2.168",
     "astro": "^4.1.2",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
