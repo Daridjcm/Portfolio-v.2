@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to resume of me.">
 	<main>
 		<svg
 			class="astro-a"
@@ -33,31 +33,30 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Welcome to profile of <span class="text-gradient">Daridjcm</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			Welcome to resume of profile<code>Daridjcm</code>, here in this section summary of the entire website, <strong>tap on some of the boxes to navigate</strong>.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="../layouts/Aboutme.astro"
+				title="About me"
+				body="Learn more about me."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="https://daridjcm.vercel.app"
+				title="Portfolio"
+				body="Portfolio official."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="../layouts/Projects.astro"
+				title="Projects"
+				body="Small projects, during the practice."
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="../layouts/Contact.astro"
+				title="Contact Me"
+				body="GitHub, LinkedIn, Twitter, Discord and Gmail."
 			/>
 		</ul>
 	</main>
@@ -107,16 +106,16 @@ import Card from '../components/Card.astro';
 		font-size: 0.8em;
 		font-weight: bold;
 		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
+		color: white 50%;
 		border-radius: 4px;
 		padding: 0.3em 0.4em;
 	}
 	.instructions strong {
-		color: rgb(var(--accent-light));
+		color: white 80%;
 	}
 	.link-card-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 2fr));
 		gap: 2rem;
 		padding: 0;
 	}
