@@ -1,0 +1,19 @@
+---
+interface Props {
+    LinkedIn: string;
+    GitHub: string;
+    Discord: string; 
+    Twitter: string; 
+    Gmail: string;
+}
+
+const { LinkedIn, GitHub, Discord, Twitter, Gmail } = Astro.props
+---
+
+<div class="flex flex-row social-links">
+    <a href={LinkedIn} target="_blank" rel="noopener noreferrer" aria-label="Link to LinkedIn profile">LinkedIn</a>
+    <a href={GitHub} target="_blank" rel="noopener noreferrer" aria-label="Link to GitHub profile">GitHub</a>
+    <a href={Discord} target="_blank" rel="noopener noreferrer" aria-label="Link to Discord sercer">Discord</a>
+    <a href={Twitter} target="_blank" rel="noopener noreferrer" aria-label="Link to Twitter profile">Twitter</a>
+    <a href={Gmail} target="_blank" rel="noopener noreferrer" aria-label="Link to Gmail">Gmail</a>
+</div>
