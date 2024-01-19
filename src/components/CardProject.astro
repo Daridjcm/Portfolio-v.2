@@ -1,5 +1,5 @@
 ---
-import GitHub from '../assets/icons/GitHub.astro';
+import GitHub from '../assets/icons/GitHub.astro'
 
 interface Props {
   href: string;
@@ -11,10 +11,10 @@ interface Props {
 const {href, img, title, details} = Astro.props;
 ---
 
-<div class="card bg-[#23262D] flex flex-col w-6/12 h-auto mt-8 ml-2 mr-2 rounded-lg">
+<div class="card bg-[#23262D] flex flex-col w-9/12 h-auto mt-2 ml-2 mr-2 rounded-lg">
     <img class="w-full rounded-md" src={img}/>
     <a href={href}>
-        <div class="info font-sans text-white opacity-70">
+        <div class="bg-[#23252D] info font-sans text-white opacity-70">
             <GitHub />
             <h2>{title}</h2>
             <p>{details}</p>

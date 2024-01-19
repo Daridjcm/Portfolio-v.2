@@ -1,110 +1,35 @@
 ---
-import Card from '../components/Card.astro';
----
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Welcome to profile.</title>
-	</head>
-	<body>
-		<section class="p-5">
-			<main>
-				<h1>Welcome to profile of <span class="text-gradient">Daridjcm</span></h1>
-				<p class="instructions">
-					Welcome to resume of profile<code>Daridjcm</code>, here in this section summary of the entire website, <strong>tap on some of the boxes to navigate</strong>.
-				</p>
-				<ul role="list" class="link-card-grid">
-					<Card
-						href="../layouts/Aboutme.astro"
-						title="About me"
-						body="Learn more about me."
-					/>
-					<Card
-						href="https://daridjcm.vercel.app"
-						title="Portfolio"
-						body="Portfolio official."
-					/>
-					<Card
-						href="../layouts/Projects.astro"
-						title="Projects"
-						body="Small projects, during the practice."
-					/>
-					<Card
-						href="../layouts/Contact.astro"
-						title="Contact Me"
-						body="GitHub, LinkedIn, Twitter, Discord and Gmail."
-					/>
-				</ul>
-			</main>
-	</section>	
-	</body>
-</html>
+import NavLink from '../components/Navigation.astro'
 
-<style is:global>
-	:root {
-		--accent: 161, 69, 112;
-		--accent-light: 186, 115, 146;
-		--accent-dark: 147, 42, 96;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: white 50%;
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: white 80%;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 2fr));
-		gap: 2rem;
-		padding: 0;
-	}	
-</style>
+---
+<section>
+  <main>
+    <h1>Welcome to profile of <span class="text-gradient">Daridjcm</span></h1>
+    <p class="instructions">
+      Welcome to resume of profile<code>Daridjcm</code>, here in this section
+      summary of the entire website, <strong>tap on some of the boxes to navigate</strong>.
+    </p>
+    <ul role="list" class="link-card-grid">
+      <NavLink
+        href=""
+        title="About me"
+        body="Learn more about me."
+      />
+      <NavLink
+        href="https://daridjcm.vercel.app"
+        title="Portfolio"
+        body="Portfolio official."
+      />
+      <NavLink 
+        href=""
+        title="Projects"
+        body="Small projects, during the practice."
+      />    
+      <NavLink
+        href=""
+        title="Contact Me"
+        body="GitHub, LinkedIn, Twitter, Discord and Gmail."
+      />
+    </ul>
+  </main>
+</section>
