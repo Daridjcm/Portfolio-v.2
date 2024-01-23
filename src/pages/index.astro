@@ -1,23 +1,26 @@
 ---
-import Navbar from '../sections/Layout.astro';
+import Home from '../sections/Home.astro';
 import Projects from '../sections/Projects.astro';
-import AboutMe from '../sections/Contact.astro';
+import Contact from '../sections/Contact.astro';
 ---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="author" content="Dariana Correa" />
+		<meta name="description" content="Dariana's personal portfolio for Front-End development. In order to demonstrate experience in this field." />
+		<meta name="keywords" content="Astro, TailwindCSS">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>Welcome to profile.</title>
+		<script src="https://kit.fontawesome.com/2e825056d4.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
         <main>
-            <Navbar />
+            <Home />
         </main>
 		<Projects />
-		<AboutMe />
+		<Contact />
 	</body>
 </html>
 
@@ -52,6 +55,9 @@ import AboutMe from '../sections/Contact.astro';
 		line-height: 1;
 		text-align: center;
 		margin-bottom: 1em;
+	}
+	section {
+		padding-bottom: 50px;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
