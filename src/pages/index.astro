@@ -16,9 +16,7 @@ import Contact from '../sections/Contact.astro';
 		<script src="https://kit.fontawesome.com/2e825056d4.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-        <main>
-            <Home />
-        </main>
+        <Home />
 		<Projects />
 		<Contact />
 	</body>
@@ -44,9 +42,8 @@ import Contact from '../sections/Contact.astro';
 		padding-bottom: 50px;
 	}
 	main {
-		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 100%;
 		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
@@ -57,7 +54,6 @@ import Contact from '../sections/Contact.astro';
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
 	}
 	section {
 		padding-bottom: 50px;
@@ -91,6 +87,5 @@ import Contact from '../sections/Contact.astro';
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 2fr));
 		gap: 2rem;
-		padding: 0;
 	}	
 </style>
