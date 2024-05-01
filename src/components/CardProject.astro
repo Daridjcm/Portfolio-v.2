@@ -5,10 +5,9 @@ interface Props {
   href: string;
   img: string;
   title: string;
-  details: string;
 }
 
-const {href, img, title, details} = Astro.props;
+const {href, img, title} = Astro.props;
 ---
 
 <div class="card bg-[#23262D] flex flex-col w-9/12 h-auto mt-2 ml-2 mr-2 rounded-lg">
@@ -17,7 +16,6 @@ const {href, img, title, details} = Astro.props;
         <div class="bg-[#23252D] info font-sans text-white opacity-70">
             <GitHub />
             <h2>{title}</h2>
-            <p>{details}</p>
-        </div>
+          </div>
       </a>
 </div>

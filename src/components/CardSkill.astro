@@ -1,0 +1,15 @@
+---
+interface Props {
+    icons : string;
+}
+
+const { icons } = Astro.props;
+---
+
+<div class="flex flex-row p-5">
+    <div class="bg-[#23262D] p-5 border border-gray-700 flex flex-col mt-2 ml-2 mr-2 rounded-lg">
+        <a href="https://skillicons.dev">
+            <img class="w-11/12" src={icons} alt="Skills">
+        </a>
+    </div>
+</div>

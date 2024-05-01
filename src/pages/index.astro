@@ -2,6 +2,7 @@
 import Home from '../sections/Home.astro';
 import Projects from '../sections/Projects.astro';
 import Contact from '../sections/Contact.astro';
+import AboutMe from '../sections/AboutMe.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -19,6 +20,7 @@ import Contact from '../sections/Contact.astro';
         <main>
             <Home />
         </main>
+		<AboutMe />
 		<Projects />
 		<Contact />
 	</body>
@@ -56,6 +58,16 @@ import Contact from '../sections/Contact.astro';
 		text-align: center;
 		margin-bottom: 1em;
 	}
+	section#AboutMe {
+		background-color: #1A1C20;
+	}
+	section#Projects {
+		background-color: #13151a;
+	}
+	section#Contact {
+		background-color: #1A1C20;
+	}
+
 	section {
 		padding-bottom: 50px;
 	}
