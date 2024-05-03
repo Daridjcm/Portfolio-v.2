@@ -9,14 +9,14 @@ const { img, name, description} = Astro.props;
 import CardSkill from './CardSkill.astro';
 ---
 
-<div class="flex flex-row justify-center">
-    <img class="flex rounded-full border border-gray-600 lg:w-1/6 sm:w-auto" src={img} alt={name} />
-    <div class="flex flex-col">
+<div class="flex lg:flex-row sm:flex-col pt-[100px] justify-center">
+    <!-- <img class="flex rounded-md border border-gray-600 max-w-54" src={img} alt={name} /> -->
+    <div class="flex flex-col justify-center lg:w-1/4">
         <h2 class="pl-5 ml-2 text-5xl font-bold text-slate-200">Hello, I'm {name}</h2>
         <h3 class="pl-5 ml-2 text-2xl font-bold text-slate-400">And I'm an Front-End Developer</h3>
         <p class="pl-5 ml-2 text-2xl text-start text-slate-300">{description}</p>
-        <CardSkill 
-            icons="https://skillicons.dev/icons?i=html,css,js,php,bootstrap,tailwindcss,astro,react,jest,vite,vscode,git,github,nodejs,ae,ps,pr,notion,svg,md,wordpress&perline=12"
-        />
     </div>
+    <CardSkill 
+        icons="https://skillicons.dev/icons?i=html,css,js,php,bootstrap,tailwindcss,astro,react,jest,vite,vscode,git,github,nodejs,ae,ps,pr,notion,svg,md,wordpress&perline=12"
+    />
 </div>

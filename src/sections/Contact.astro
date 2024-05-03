@@ -3,11 +3,37 @@ import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <section id="Contact">
-    <h1 class="text-gradient pt-5">Contact</h4>
-    <p class="text-slate-100 text-center"></p>
+    <h1 class="text-gradient">Contact</h4>
+    <form>
+        <div class="container m-auto max-w-[600px] text-1xl">
+            <div class="mb-4">
+                <label class="block text-gray-300 text-md font-bold mb-2" for="name">
+                  Nombre
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Nombre">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-300 text-md font-bold mb-2" for="email">
+                  Correo electrónico
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Correo electrónico">
+              </div>
+              <div class="mb-6">
+                <label class="block text-gray-300 text-md font-bold mb-2" for="message">
+                  Mensaje
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="flex items-center justify-between">
+                <button class="bg-[#ad5b80] hover:bg-[#924f6d] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                  Enviar Mensaje
+                </button>
+            </div>
+        </div>
+    </form>
 </section>
 <!-- Improvent structure de flexbox in the links -->
-<footer class="flex justify-end">
+<footer class="pt-10">
     <SocialLinks 
         LinkedIn="https://linkedin.com/in/daridjcm"
         GitHub="https://github.com/Daridjcm"
