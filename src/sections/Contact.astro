@@ -1,7 +1,11 @@
+---
+import SocialLinks from "../components/SocialLinks.astro";
+---
+
 <section id="Contact">
     <h1 class="text-gradient">Contact</h4>
     <form action="https://formsubmit.co/daricorreamedina@gmail.com" method="post">
-        <div class="container m-auto max-w-[600px] text-1xl">
+        <div class="container m-auto max-w-[800px] sm:p-5 text-1xl">
             <div class="mb-4">
                 <label class="block text-gray-300 text-md font-bold mb-2" for="name">
                   Name
@@ -28,3 +32,12 @@
         </div>
     </form>
 </section>
+<footer>
+  <SocialLinks 
+    LinkedIn="https://linkedin.com/in/daridjcm"
+    GitHub="https://github.com/Daridjcm"
+    Discord="https://discord.com/invite/XZSuGbVyp7"
+    Twitter="https://twitter.com/Daridjcm"
+    Gmail="mailto:daricorreamedina@gmail.com?subject=Hello, Dariana&body=I'm Interesting"
+  />
+</footer>
