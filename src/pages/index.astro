@@ -1,91 +1,78 @@
 ---
-import Projects from '../sections/Projects.astro';
-import Contact from '../sections/Contact.astro';
-import AboutMe from '../sections/AboutMe.astro';
+import Projects from "../sections/Projects.astro";
+import Contact from "../sections/Contact.astro";
+import AboutMe from "../sections/AboutMe.astro";
 ---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="author" content="Dariana Correa" />
-		<meta name="description" content="Dariana's personal portfolio for Front-End development. In order to demonstrate experience in this field." />
-		<meta name="keywords" content="Astro, TailwindCSS">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Welcome to profile.</title>
-		<script src="https://kit.fontawesome.com/2e825056d4.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<AboutMe />
-		<Projects />
-		<Contact />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dariana Correa" />
+    <meta
+      name="description"
+      content="Dariana's personal portfolio for Front-End development. In order to demonstrate experience in this field."
+    />
+    <meta name="keywords" content="Astro, TailwindCSS" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Welcome to profile.</title>
+    <script
+      src="https://kit.fontawesome.com/2e825056d4.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <AboutMe />
+    <Projects />
+    <Contact />
+  </body>
+  <script src="../pages/script.js"></script>
 </html>
 
 <style is:global>
-	:root {
-		--accent: 161, 69, 112;
-		--accent-light: 186, 115, 146;
-		--accent-dark: 147, 42, 96;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-	}
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	section {
-		padding-bottom: 50px;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: white 50%;
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: white 80%;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 2fr));
-		gap: 2rem;
-		padding: 0;
-	}	
+  :root {
+    --accent: 161, 69, 112;
+    --accent-light: 186, 115, 146;
+    --accent-dark: 147, 42, 96;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+    --accent-gradient-h2: #bb608f;
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    background-position: 0%;
+  }
+  h2 {
+    transition: background 0.3s, transform 0.3s, opacity 0.3s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0.9; /* Opacidad inicial */
+	transition: all 0.30s;
+  }
+
+  h2.hover {
+	transition: all 0.40s;
+	color: var(--accent-gradient-h2);
+    opacity: 100; /* Opacidad completa al pasar el mouse */
+  }
+  section {
+    padding-bottom: 100px;
+  }
 </style>
