@@ -16,18 +16,34 @@ npm create astro@latest -- --template basics
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+└── 📁Portfolio-v.2
+    └── .gitignore
+    └── astro.config.mjs
+    └── package-lock.json
+    └── package.json
+    └── 📁public
+        └── favicon.svg
+    └── README.md
+    └── 📁src
+        └── 📁assets
+            └── 📁icons
+                └── GitHub.astro
+        └── 📁components
+            └── CardProject.astro
+            └── CardSkill.astro
+            └── Img-Description.astro
+            └── SocialLinks.astro
+        └── env.d.ts
+        └── 📁pages
+            └── index.astro
+            └── script.js
+        └── 📁sections
+            └── AboutMe.astro
+            └── Contact.astro
+            └── Projects.astro
+    └── tailwind.config.mjs
+    └── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
