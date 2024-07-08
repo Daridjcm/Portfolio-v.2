@@ -8,24 +8,24 @@ import AboutMe from "../sections/AboutMe.astro";
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dariana Correa" />
     <meta
       name="description"
       content="Dariana's personal portfolio for Front-End development. In order to demonstrate experience in this field."
     />
     <meta name="keywords" content="Astro, TailwindCSS" />
-    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Welcome to profile.</title>
-    <script
-      src="https://kit.fontawesome.com/2e825056d4.js"
-      crossorigin="anonymous"></script>
   </head>
   <body>
     <AboutMe />
     <Projects />
     <Contact />
   </body>
+  <script
+    src="https://kit.fontawesome.com/2e825056d4.js"
+    crossorigin="anonymous"></script>
   <script src="../pages/script.js"></script>
 </html>
 
@@ -74,5 +74,9 @@ import AboutMe from "../sections/AboutMe.astro";
   }
   section {
     padding-bottom: 100px;
+  }
+  img{
+    width: 100%;
+    
   }
 </style>

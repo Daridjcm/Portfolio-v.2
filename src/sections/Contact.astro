@@ -3,37 +3,53 @@ import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <section id="Contact">
-    <h1 class="text-gradient">Contact</h4>
-    <form action="https://formsubmit.co/daricorreamedina@gmail.com" method="post">
-        <div class="flex flex-col items-center">
-            <div class="mb-4">
-                <label class="block text-gray-300 font-bold mb-2" for="name">
-                  Name
-                </label>
-                <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
-              </div>
-              <div class="mb-4">
-                <label class="block text-gray-300 font-bold mb-2" for="email">
-                  Email
-                </label>
-                <input class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
-              </div>
-              <div class="mb-4">
-                <label class="block text-gray-300 font-bold mb-2" for="message">
-                  Message
-                </label>
-                <textarea class="shadow appearance-none border rounded max-w-[306.4px] min-w-[206.4px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Message"></textarea>
-              </div>
-              <div class="flex items-center justify-between">
-                <button class="bg-[#ad5b80] hover:bg-[#924f6d] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                  Submit
-                </button>
-            </div>
-        </div>
-    </form>
+  <h1 class="text-gradient">Contact</h1>
+  <form action="https://formsubmit.co/daricorreamedina@gmail.com" method="post">
+    <div class="container max-w-2xl min-w-1xl m-auto text-1xl p-4">
+      <div class="mb-4">
+        <label class="block text-gray-300 text-md font-bold mb-2" for="name">
+          Name
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="name"
+          type="text"
+          placeholder="Name"
+        />
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-300 text-md font-bold mb-2" for="email">
+          Email
+        </label>
+        <input
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          type="email"
+          placeholder="Email"
+        />
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-300 text-md font-bold mb-2" for="message">
+          Message
+        </label>
+        <textarea
+          class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="message"
+          placeholder="Message"></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+        <button
+          class="bg-[#ad5b80] hover:bg-[#924f6d] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </form>
 </section>
 <footer>
-  <SocialLinks 
+  <SocialLinks
     LinkedIn="https://linkedin.com/in/daridjcm"
     GitHub="https://github.com/Daridjcm"
     Discord="https://discord.com/invite/XZSuGbVyp7"
