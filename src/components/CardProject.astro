@@ -1,6 +1,4 @@
 ---
-import GitHub from '../assets/icons/GitHub.astro'
-
 interface Props {
   href: string;
   img: string;
@@ -10,11 +8,10 @@ interface Props {
 const {href, img, title} = Astro.props;
 ---
 
-<div class="card bg-[#23262D] hover:bg-[#323640] transition-all p-2 flex flex-col items-stretch w-9/12 h-auto mt-2 ml-2 mr-2 rounded-lg hover:scale-110">
+<div class="card bg-[#23262D] hover:bg-[#323640] transition-all p-2 flex flex-col items-stretch gap-5 w-auto h-auto m-2 rounded-lg hover:scale-105">
     <img class="w-full rounded-md" src={img}/>
     <a href={href}>
-        <div class="bg-[#23252D] hover:bg-[#323640] transition-all info font-sans p-2 text-white opacity-70">
-            <GitHub />
+        <div class="bg-[#23252D] hover:bg-[#323640] transition-all info font-sans pl-2 pr-2 text-white opacity-70">
             <h2 class="text-white hover:opacity-50 transition-all">{title}</h2>
           </div>
       </a>
